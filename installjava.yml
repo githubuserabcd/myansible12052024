@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes 
+  tasks: 
+  - name: in this task i want to install java
+    apt:
+      name: "{{myjavaonubuntu}}"
+      state: present 
