@@ -7,4 +7,7 @@
     copy: 
       src: mycopyfile
       dest: /home/maha/mycopyfile
-      
+  - name: install webserver
+    apt: 
+      name: apache2
+      state: present 
